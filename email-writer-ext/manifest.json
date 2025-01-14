@@ -1,0 +1,46 @@
+{
+    "name": "DraftWise",
+    "description": "AI-powered email response generator",
+    "version": "1.0",
+    "manifest_version": 3,
+    "author": "likhithraj005@gmail.com",
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+    "host_permissions": [
+        "http://localhost:8080/*",
+        "*://mail.google.com/*"
+    ],
+    "content_scripts": [
+        {
+            "js": [
+                "content.js"
+            ],
+            "matches": [
+                "*://mail.google.com/*"
+            ],
+            "css": [
+                "content.css"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "jasper-96.png",
+                "icons/*"
+            ],
+            "matches": [
+                "*://mail.google.com/*"
+            ]
+        }
+    ],
+
+    "action": {
+        "default_title": "DraftWise",
+        "default_icon": "jasper-96.png"
+    }
+}
