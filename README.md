@@ -35,4 +35,4 @@ A Chrome extension to simplify your email-writing tasks.
 - Once installed, the extension icon will appear in the Chrome toolbar.
 - Click the icon to access the extension's features, and pin the extension to easily use its features.
 
-![Chrome Extension Screenshot](assets/extension-setup.png)
+![Chrome Extension Screenshot](https://github.com/likhithraj005/DraftWise/blob/master/DraftWise.png)
